@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Fugue",
+  "version": "0.1.0",
+  "identifier": "com.tensorhost.fugue",
+  "build": {
+    "beforeDevCommand": "pnpm dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "pnpm build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Fugue",
+        "width": 1280,
+        "height": 820,
+        "maximized": true,
+        "minWidth": 960,
+        "minHeight": 760,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": "default-src 'none'; base-uri 'none'; form-action 'none'; object-src 'none'; frame-ancestors 'none'; script-src 'self'; connect-src ipc: http://ipc.localhost; img-src 'self' data:; style-src 'self'; font-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "category": "DeveloperTool",
+    "icon": ["icons/icon.icns", "icons/icon.ico", "icons/icon.png"],
+    "resources": [
+      "../src/assets/fonts/geist-mono-OFL.txt",
+      "../src/assets/fonts/space-mono-OFL.txt",
+      "../src/assets/licenses/three-LICENSE.txt"
+    ],
+    "macOS": {
+      "minimumSystemVersion": "11.0"
+    },
+    "shortDescription": "Fugue OpenCode visibility cockpit",
+    "longDescription": "A read-only desktop cockpit for work delegated by source agents and executed through OpenCode."
+  }
+}

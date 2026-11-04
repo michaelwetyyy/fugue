@@ -1,0 +1,33 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.coverage
+.pytest_cache/
+.venv/
+build/
+dist/
+ui/node_modules/
+ui/dist/
+ui/src-tauri/target/
+ui/src-tauri/gen/
+
+# Runtime state belongs outside the source repository.
+*.db
+*.db-shm
+*.db-wal
+logs/
+state/
+
+# Local configuration and credentials must never be published.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.pid
+*.sock
+*.log
+*.jsonl
+.DS_Store

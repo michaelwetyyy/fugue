@@ -1,0 +1,17 @@
+{
+  "controller": {
+    "state": "stopped"
+  },
+  "exported_at": "2026-08-29T10:00:00Z",
+  "format": "oc-rig-v1-synthetic-compat-v1",
+  "migration_id": "synthetic-minimal-001",
+  "queue": [
+    {
+      "enqueued_at": "2026-08-29T09:59:00Z",
+      "id": "synthetic-work-001",
+      "lane": "tensorhost",
+      "state": "queued"
+    }
+  ],
+  "schema_version": 1
+}

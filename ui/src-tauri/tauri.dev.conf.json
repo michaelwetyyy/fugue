@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Fugue Dev",
+  "identifier": "com.tensorhost.fugue.dev",
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Fugue Dev",
+        "width": 1280,
+        "height": 820,
+        "maximized": true,
+        "minWidth": 960,
+        "minHeight": 760,
+        "resizable": true
+      }
+    ]
+  },
+  "bundle": {
+    "shortDescription": "Isolated Fugue development laboratory",
+    "longDescription": "A synthetic, no-delivery development laboratory for Fugue integration work."
+  },
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  }
+}
